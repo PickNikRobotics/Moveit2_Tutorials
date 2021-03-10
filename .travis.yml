@@ -23,7 +23,7 @@ jobs:
   fast_finish: true
   include:
     - name: "[Foxy] - htmlproofer"
-      env: AFTER_SCRIPT=htmlproofer.sh
+      env: AFTER_SCRIPT=src/Moveit2_Tutorials/htmlproofer.sh
     - name: "[Foxy] - clang-format, ament_lint"
       env: TEST="clang-format ament_lint"
     - name: "[Foxy] - gcc (build,test)"
