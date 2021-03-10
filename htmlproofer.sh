@@ -25,7 +25,8 @@ cd ros_ws/src
 git clone -b pr-foxy-devel https://github.com/MarqRazz/rosdoc_lite.git
 git clone -b pr-foxy-devel https://github.com/MarqRazz/genmsg.git
 cd ..
-colcon build
+rosdep install -r --from-paths . --ignore-src --rosdistro foxy -y
+colcon build --event-handlers desktop_notification- status- --cmake-args -DCMAKE_BUILD_TYPE=Release
 source install/setup.bash
 cd ../$REPOSITORY_NAME
 
