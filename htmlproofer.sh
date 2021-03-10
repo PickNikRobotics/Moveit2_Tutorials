@@ -17,6 +17,8 @@ gem update --system
 gem --version
 gem install html-proofer
 # Install ROS's version of sphinx
+pip install sphinx==1.8.5
+sphinx-build --version
 cd ..
 mkdir -p ros_ws/src
 cd ros_ws/src
@@ -25,7 +27,7 @@ git clone -b pr-foxy-devel https://github.com/MarqRazz/genmsg.git
 cd ..
 colcon build
 source install/setup.bash
-cd ../Moveit2_Tutorials
+cd ../$REPOSITORY_NAME
 
 # Test build with non-ROS wrapped Sphinx command to allow warnings and errors to be caught
 sphinx-build -W -b html . native_build
