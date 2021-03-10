@@ -17,7 +17,7 @@ gem update --system
 gem --version
 gem install html-proofer
 # Install ROS's version of sphinx
-rosversion -d
+pwd
 sudo apt-get -qq install ros-kinetic-rosdoc-lite
 source /opt/ros/kinetic/setup.bash
 
