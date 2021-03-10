@@ -8,7 +8,7 @@ echo "Testing branch $TRAVIS_BRANCH of $REPOSITORY_NAME"
 sudo -E sh -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/ros-latest.list'
 wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
 sudo apt-get update -qq
-sudo apt-get install -qq -y python-rosdep python-wstool python-catkin-tools
+sudo apt-get install -qq -y python-rosdep python-wstool python3-colcon-common-extensions
 # Setup rosdep
 sudo rosdep init
 rosdep update
