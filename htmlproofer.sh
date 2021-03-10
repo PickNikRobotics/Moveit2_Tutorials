@@ -25,7 +25,7 @@ git clone -b pr-foxy-devel https://github.com/MarqRazz/genmsg.git
 cd ..
 colcon build
 source install/setup.bash
-cd ../REPOSITORY_NAME
+cd ../Moveit2_Tutorials
 
 # Test build with non-ROS wrapped Sphinx command to allow warnings and errors to be caught
 sphinx-build -W -b html . native_build
